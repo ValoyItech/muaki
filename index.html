@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Muaki Group">
+<meta name="description" content="Muaki Group - Professional Civil Engineering, Electrical, Construction, Backup Power Solutions, Property Rentals, and Hardware Supply across South Africa.">
+<meta name="keywords" content="Muaki Group, Civil Engineering, Electrical Services, Backup Power, Construction, Air Conditioning, Property Rentals, Hardware Store, South Africa">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Muaki Group | Building Excellence">
+<meta property="og:description" content="Delivering construction, engineering, electrical, property, and hardware solutions across South Africa.">
+<meta property="og:image" content="images/logo.png">
+<meta property="og:url" content="https://www.muakigroup.co.za/">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Muaki Group | Building Excellence">
+<meta name="twitter:description" content="Delivering construction, engineering, electrical, property, and hardware solutions across South Africa.">
+<meta name="twitter:image" content="images/logo.png">
+
+<!-- Favicon -->
+<link rel="icon" href="images/logo.png" type="image/png">
+
+    <title>Muaki Group - Construction & Engineering Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        muakiOrange: '#F97316',
+                        muakiNavy: '#1E3A8A',
+                        muakiGray: '#6B7280',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.8)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .nav-link:hover {
+            color: #F97316;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="flex items-center">
+    <img src="images/logo.png" alt="MUAKI GROUP Logo" class="h-10 mr-2">
+    <span class="text-xl font-bold text-muakiNavy">MUAKI GROUP</span>
+</div>
+
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-muakiNavy hover:text-muakiOrange focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-muakiNavy font-medium hover:text-muakiOrange transition duration-300">Home</a>
+                    <a href="#about" class="nav-link text-muakiNavy font-medium hover:text-muakiOrange transition duration-300">About</a>
+                    <a href="#services" class="nav-link text-muakiNavy font-medium hover:text-muakiOrange transition duration-300">Services</a>
+                    <a href="#projects" class="nav-link text-muakiNavy font-medium hover:text-muakiOrange transition duration-300">Projects</a>
+                    <a href="#contact" class="nav-link text-muakiNavy font-medium hover:text-muakiOrange transition duration-300">Contact</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="#contact" class="bg-muakiOrange text-white px-6 py-2 rounded-md font-medium hover:bg-orange-600 transition duration-300">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white pb-4 px-4">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="nav-link text-muakiNavy font-medium hover:text-muakiOrange transition duration-300">Home</a>
+                <a href="#about" class="nav-link text-muakiNavy font-medium hover:text-muakiOrange transition duration-300">About</a>
+                <a href="#services" class="nav-link text-muakiNavy font-medium hover:text-muakiOrange transition duration-300">Services</a>
+                <a href="#projects" class="nav-link text-muakiNavy font-medium hover:text-muakiOrange transition duration-300">Projects</a>
+                <a href="#contact" class="nav-link text-muakiNavy font-medium hover:text-muakiOrange transition duration-300">Contact</a>
+                <a href="#contact" class="bg-muakiOrange text-white px-6 py-2 rounded-md font-medium hover:bg-orange-600 transition duration-300 text-center">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-24 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="animate-fade-in">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Building The Future <br> With Excellence</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl">Muaki Group delivers innovative construction and engineering solutions with uncompromising quality and safety standards.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-muakiOrange text-white px-8 py-3 rounded-md font-medium hover:bg-orange-600 transition duration-300 text-center">Get Started</a>
+                    <a href="#services" class="border-2 border-white text-white px-8 py-3 rounded-md font-medium hover:bg-white hover:text-muakiNavy transition duration-300 text-center">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+<section class="bg-white py-12" id="stats">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="p-4">
+                <div class="text-muakiOrange text-4xl font-bold mb-2 counter" data-target="15">0+</div>
+                <div class="text-muakiNavy font-medium">Years Experience</div>
+            </div>
+            <div class="p-4">
+                <div class="text-muakiOrange text-4xl font-bold mb-2 counter" data-target="100">0+</div>
+                <div class="text-muakiNavy font-medium">Projects Completed</div>
+            </div>
+            <div class="p-4">
+                <div class="text-muakiOrange text-4xl font-bold mb-2 counter" data-target="50">0+</div>
+                <div class="text-muakiNavy font-medium">Expert Employees</div>
+            </div>
+            <div class="p-4">
+                <div class="text-muakiOrange text-4xl font-bold mb-2 counter" data-target="24">0/7</div>
+                <div class="text-muakiNavy font-medium">Support Available</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+<section id="about" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+            <div class="mb-12 lg:mb-0">
+                <h2 class="text-3xl font-bold text-muakiNavy mb-6">About Muaki Group</h2>
+                <p class="text-muakiGray mb-6">
+                    With over <strong>15 years of experience</strong>, Muaki Group is a diversified South African company specializing in <strong>civil engineering, electrical services including full backup power solutions, domestic & commercial construction, air conditioning installations</strong>, and more.
+                </p>
+                <p class="text-muakiGray mb-6">
+                    In addition to construction and engineering, we proudly operate several <strong>hardware stores</strong> and manage a portfolio of <strong>rental apartments across South Africa</strong>. Our multidisciplinary team delivers reliable, high-quality services with a focus on safety, innovation, and long-term partnerships.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-muakiOrange text-xl mt-1 mr-3"></i>
+                        <span class="text-muakiNavy">Licensed and insured multidisciplinary professionals</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-muakiOrange text-xl mt-1 mr-3"></i>
+                        <span class="text-muakiNavy">Complete turnkey solutions across multiple industries</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-muakiOrange text-xl mt-1 mr-3"></i>
+                        <span class="text-muakiNavy">Nationwide presence and trusted client relationships</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Construction site" class="rounded-lg shadow-xl w-full">
+                <div class="absolute -bottom-6 -right-6 bg-muakiOrange text-white p-6 rounded-lg shadow-lg hidden md:block">
+                    <div class="text-3xl font-bold">15+</div>
+                    <div class="text-sm">Years of Excellence</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Services Section -->
+<section id="services" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-muakiNavy mb-4">Our Services</h2>
+            <p class="text-muakiGray max-w-2xl mx-auto">Comprehensive multidisciplinary services, delivering excellence across construction, engineering, electrical, air conditioning, property rentals, and hardware supply throughout South Africa.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Civil Engineering -->
+            <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition duration-300">
+                <div class="bg-muakiOrange text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                    <i class="fas fa-road text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-muakiNavy mb-3">Civil Engineering</h3>
+                <p class="text-muakiGray">Roads, bridges, infrastructure and public works projects, engineered to the highest standards.</p>
+            </div>
+
+            <!-- Electrical & Backup Power -->
+            <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition duration-300">
+                <div class="bg-muakiOrange text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                    <i class="fas fa-bolt text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-muakiNavy mb-3">Electrical & Backup Power</h3>
+                <p class="text-muakiGray">Full-service electrical installations, maintenance, and reliable backup power solutions.</p>
+            </div>
+
+            <!-- Domestic & Commercial Construction -->
+            <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition duration-300">
+                <div class="bg-muakiOrange text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                    <i class="fas fa-building text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-muakiNavy mb-3">Construction</h3>
+                <p class="text-muakiGray">Residential and commercial construction projects, from foundations to full turnkey developments.</p>
+            </div>
+
+            <!-- Air Conditioning Installations -->
+            <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition duration-300">
+                <div class="bg-muakiOrange text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                    <i class="fas fa-snowflake text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-muakiNavy mb-3">Air Conditioning</h3>
+                <p class="text-muakiGray">Air conditioning and HVAC system installations, servicing, and repairs for all property types.</p>
+            </div>
+
+            <!-- Property Rentals -->
+            <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition duration-300">
+                <div class="bg-muakiOrange text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                    <i class="fas fa-key text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-muakiNavy mb-3">Property Rentals</h3>
+                <p class="text-muakiGray">Managing apartment rentals across South Africa, providing comfortable living solutions.</p>
+            </div>
+
+            <!-- Hardware Stores -->
+            <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition duration-300">
+                <div class="bg-muakiOrange text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                    <i class="fas fa-store text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-muakiNavy mb-3">Hardware Stores</h3>
+                <p class="text-muakiGray">
+                    Building materials, tools, and construction equipment. 
+                    <a href="https://www.muakigroup.co.za/" target="_blank" class="text-muakiOrange font-semibold hover:underline">Visit Our Store</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+<section id="projects" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-muakiNavy mb-4">Our Projects</h2>
+            <p class="text-muakiGray max-w-2xl mx-auto">A showcase of our work across civil engineering, electrical systems, construction, air conditioning, property rentals, and hardware supply.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Civil Engineering Project -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                <img src="images/Bridge.jpg" alt="Civil Engineering Project" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-muakiNavy mb-2">Nkomazi Bridge</h3>
+                    <p class="text-muakiGray mb-4">Bridge and road development improving transport infrastructure for local communities.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-muakiOrange font-medium">Civil Engineering</span>
+                        <span class="text-sm text-muakiGray">2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Electrical & Backup Power Project -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                <img src="images/power.jpg" alt="Backup Power Installation" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-muakiNavy mb-2">Backup Power Systems</h3>
+                    <p class="text-muakiGray mb-4">Commercial backup power solutions installed for uninterrupted business operations.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-muakiOrange font-medium">Electrical</span>
+                        <span class="text-sm text-muakiGray">2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Construction Project -->
+<div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+    <img src="images/construction.jpg" alt="Commercial and Domestic Construction" class="w-full h-48 object-cover">
+    <div class="p-6">
+        <h3 class="text-xl font-bold text-muakiNavy mb-2">Building & Construction Services</h3>
+        <p class="text-muakiGray mb-4">Comprehensive construction services for both commercial and domestic projects, including new builds, renovations, and structural improvements.</p>
+        <div class="flex justify-between items-center">
+            <span class="text-sm text-muakiOrange font-medium">Construction: Commercial & Domestic</span>
+            <span class="text-sm text-muakiGray">2022</span>
+        </div>
+    </div>
+</div>
+
+
+            <!-- Air Conditioning Project -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                <img src="images/hvac.jpg" alt="HVAC Installation" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-muakiNavy mb-2">Office HVAC Install</h3>
+                    <p class="text-muakiGray mb-4">Complete air conditioning and ventilation installation for a multi-floor office building.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-muakiOrange font-medium">Air Conditioning</span>
+                        <span class="text-sm text-muakiGray">2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property Rentals Project -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                <img src="images/3.jpg" alt="Rental Apartments" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-muakiNavy mb-2">Muaki Apartments</h3>
+                    <p class="text-muakiGray mb-4">Modern apartment rentals located in several regions across South Africa.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-muakiOrange font-medium">Property Rentals</span>
+                        <span class="text-sm text-muakiGray">Ongoing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hardware Store Project -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                <img src="images/6.jpg" alt="Hardware Store" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-muakiNavy mb-2">Muaki Hardware Store</h3>
+                    <p class="text-muakiGray mb-4">Fully-stocked hardware store supplying materials, equipment, and tools for construction projects.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-muakiOrange font-medium">Hardware Supply</span>
+                        <span class="text-sm text-muakiGray">Ongoing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="https://www.muakigroup.co.za/" class="inline-block border-2 border-muakiOrange text-muakiOrange px-6 py-2 rounded-md font-medium hover:bg-muakiOrange hover:text-white transition duration-300">View All Projects</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Why Choose Us Section -->
+<section class="py-16 bg-muakiNavy text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Why Choose Muaki Group</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto">Delivering trusted, comprehensive solutions across South Africa for over 15 years.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Value 1 -->
+            <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-filter backdrop-blur-sm">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-award text-muakiOrange text-3xl mr-3"></i>
+                    <h3 class="font-bold text-xl">Proven Experience</h3>
+                </div>
+                <p>Over 15 years of successful projects in civil engineering, construction, electrical, and property sectors.</p>
+            </div>
+
+            <!-- Value 2 -->
+            <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-filter backdrop-blur-sm">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-hard-hat text-muakiOrange text-3xl mr-3"></i>
+                    <h3 class="font-bold text-xl">Full-Service Capabilities</h3>
+                </div>
+                <p>From design to delivery — offering complete solutions under one roof, including rentals and hardware supply.</p>
+            </div>
+
+            <!-- Value 3 -->
+            <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-filter backdrop-blur-sm">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-users text-muakiOrange text-3xl mr-3"></i>
+                    <h3 class="font-bold text-xl">Dedicated Team</h3>
+                </div>
+                <p>Skilled multidisciplinary professionals focused on safety, innovation, and client satisfaction on every project.</p>
+            </div>
+
+            <!-- Value 4 -->
+            <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-filter backdrop-blur-sm">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-bolt text-muakiOrange text-3xl mr-3"></i>
+                    <h3 class="font-bold text-xl">Backup Power Expertise</h3>
+                </div>
+                <p>Reliable power backup installations to keep homes, businesses, and industries operating without interruption.</p>
+            </div>
+
+            <!-- Value 5 -->
+            <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-filter backdrop-blur-sm">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-snowflake text-muakiOrange text-3xl mr-3"></i>
+                    <h3 class="font-bold text-xl">HVAC & Air Conditioning</h3>
+                </div>
+                <p>Design, supply, and installation of efficient air conditioning and climate control systems for any scale.</p>
+            </div>
+
+            <!-- Value 6 -->
+            <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-filter backdrop-blur-sm">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-store text-muakiOrange text-3xl mr-3"></i>
+                    <h3 class="font-bold text-xl">Hardware Stores</h3>
+                </div>
+                <p>Direct access to high-quality materials and tools. <a href="https://www.muakigroup.co.za/" target="_blank" class="text-muakiOrange font-semibold hover:underline">Visit Our Store</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+<section id="contact" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-16">
+            <div class="mb-12 lg:mb-0">
+                <h2 class="text-3xl font-bold text-muakiNavy mb-6">Get In Touch</h2>
+                <p class="text-muakiGray mb-8">Ready to start your next construction or engineering project? Contact us today to discuss your needs.</p>
+                
+                <div class="space-y-6">
+                    <!-- Limpopo Branch -->
+                    <div class="flex items-start">
+                        <div class="bg-muakiOrange text-white p-3 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-muakiNavy mb-1">Limpopo Branch</h3>
+                            <p class="text-muakiGray">
+                                Stand number ERF 85, R81,<br>
+                                Mphambo Village, Malamulele, 0982
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Gauteng Branch -->
+                    <div class="flex items-start">
+                        <div class="bg-muakiOrange text-white p-3 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-muakiNavy mb-1">Gauteng Branch</h3>
+                            <p class="text-muakiGray">
+                                1693 Theka Street,<br>
+                                Phomolong 1635
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="flex items-start">
+                        <div class="bg-muakiOrange text-white p-3 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-muakiNavy mb-1">Phone</h3>
+                            <p class="text-muakiGray">010 035 0177</p>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="flex items-start">
+                        <div class="bg-muakiOrange text-white p-3 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-muakiNavy mb-1">Email</h3>
+                            <p class="text-muakiGray">sales@muakigroup.co.za</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold text-muakiNavy mb-6">Send Us a Message</h3>
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-muakiNavy font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-muakiOrange">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-muakiNavy font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-muakiOrange">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="subject" class="block text-muakiNavy font-medium mb-2">Subject</label>
+                        <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-muakiOrange">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-muakiNavy font-medium mb-2">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-muakiOrange"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-muakiOrange text-white px-6 py-3 rounded-md font-medium hover:bg-orange-600 transition duration-300">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Newsletter Section -->
+    <section class="py-12 bg-muakiOrange text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+            <p class="mb-6 max-w-2xl mx-auto">Stay updated with our latest projects, construction tips, and industry insights.</p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-2 rounded-md text-gray-800 focus:outline-none">
+                <button type="submit" class="bg-muakiNavy text-white px-6 py-2 rounded-md font-medium hover:bg-blue-900 transition duration-300">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-muakiNavy text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <!-- Logo & Description -->
+            <div>
+                <div class="flex items-center mb-4">
+    <img src="images/logo.png" alt="Muaki Group Logo" class="w-10 h-10 mr-2">
+    <span class="text-xl font-bold">MUAKI GROUP</span>
+</div>
+
+                <p class="text-gray-300 mb-4">Building excellence through innovation, quality, and integrity.</p>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/profile.php?id=100078176425671#" class="text-gray-300 hover:text-muakiOrange transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@muakigroup?is_from_webapp=1&sender_device=pc" class="text-gray-300 hover:text-muakiOrange transition duration-300"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/27780901750" class="text-gray-300 hover:text-muakiOrange transition duration-300"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/muakigroup.construction/" class="text-gray-300 hover:text-muakiOrange transition duration-300"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="text-gray-300 hover:text-muakiOrange transition duration-300">Home</a></li>
+                    <li><a href="#about" class="text-gray-300 hover:text-muakiOrange transition duration-300">About Us</a></li>
+                    <li><a href="#services" class="text-gray-300 hover:text-muakiOrange transition duration-300">Services</a></li>
+                    <li><a href="#projects" class="text-gray-300 hover:text-muakiOrange transition duration-300">Projects</a></li>
+                    <li><a href="#contact" class="text-gray-300 hover:text-muakiOrange transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Updated Services -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Our Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="#services" class="text-gray-300 hover:text-muakiOrange transition duration-300">Civil Engineering</a></li>
+                    <li><a href="#services" class="text-gray-300 hover:text-muakiOrange transition duration-300">Electrical & Backup Power</a></li>
+                    <li><a href="#services" class="text-gray-300 hover:text-muakiOrange transition duration-300">Construction Projects</a></li>
+                    <li><a href="#services" class="text-gray-300 hover:text-muakiOrange transition duration-300">Air Conditioning Installations</a></li>
+                    <li><a href="https://www.muakigroup.co.za/" target="_blank" class="text-gray-300 hover:text-muakiOrange transition duration-300">Hardware Supply</a></li>
+                </ul>
+            </div>
+
+            <!-- Updated Contact Info -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Contact Info</h3>
+                <address class="not-italic text-gray-300 space-y-2">
+                    <p><strong>Limpopo Branch:</strong><br>ERF 85, R81<br>Mphambo Village, Malamulele, 0982</p>
+                    <p><strong>Gauteng Branch:</strong><br>1693 Theka Street<br>Phomolong 1635</p>
+                    <p>Phone: 010 035 0177</p>
+                    <p>Email: sales@muakigroup.co.za</p>
+                </address>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+            <p>&copy; 2025 Muaki Group. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Add animation class when elements come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        document.querySelectorAll('.animate-fade-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.counter');
+    let started = false;
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !started) {
+                counters.forEach(counter => {
+                    animateCounter(counter);
+                });
+                started = true;
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    observer.observe(document.getElementById('stats'));
+
+    function animateCounter(counter) {
+        const target = +counter.getAttribute('data-target');
+        let current = 0;
+        const speed = 30; // smaller = faster
+
+        const update = () => {
+            const increment = target / speed;
+            current += increment;
+            if (current < target) {
+                counter.innerText = Math.ceil(current) + (counter.dataset.target == "24" ? "/7" : "+");
+                requestAnimationFrame(update);
+            } else {
+                counter.innerText = target + (counter.dataset.target == "24" ? "/7" : "+");
+            }
+        };
+        update();
+    }
+});
+
+    </script>
+</body>
+</html>
