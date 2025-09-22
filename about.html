@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Muaki Business Park</title>
+  <meta name="title" content="About Muaki Business Park">
+  <meta name="description" content="Learn more about Muaki’s vision, mission, and diverse industries driving growth in Limpopo and Gauteng.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.muakigroup.co.za/about.html">
+  <meta property="og:title" content="About Muaki Business Park">
+  <meta property="og:description" content="Discover our mission, values, and the industries shaping Muaki Business Park.">
+  <meta property="og:image" content="https://www.muakigroup.co.za/images/logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.muakigroup.co.za/about.html">
+  <meta property="twitter:title" content="About Muaki Business Park">
+  <meta property="twitter:description" content="Learn more about our vision, mission, and innovation at Muaki Business Park.">
+  <meta property="twitter:image" content="https://www.muakigroup.co.za/images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'muaki-orange': '#FF6B35',
+                        'muaki-navy': '#1E3A8A',
+                        'muaki-light-gray': '#F3F4F6'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .navbar-scroll {
+            backdrop-filter: blur(10px);
+            background: rgba(30, 58, 138, 0.95);
+        }
+        
+        .value-card {
+            transition: all 0.3s ease;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .career-card {
+            transition: all 0.3s ease;
+        }
+        
+        .career-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .timeline-item {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.6s ease-out;
+        }
+        
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .culture-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .culture-icon:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* =====  MOBILE  ===== */
+@media (max-width: 767px) {
+  html, body {
+    overflow-x: hidden;   /* never allow horizontal scroll */
+    width: 100vw;         /* force exact viewport width */
+  }
+  /* optional – make images & video never break the layout */
+  img, video, iframe, svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-2 text-white text-2xl font-bold">
+  <a href="index.html" class="flex items-center space-x-2">
+    <img src="images/Untitled design.png" alt="MUAKI Logo" class="w-10 h-10 rounded-full">
+    <span><span class="text-muaki-orange">MUAKI</span> Business Park</span>
+  </a>
+</div>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-white hover:text-muaki-orange transition-colors">Home</a>
+                <a href="about.html" class="text-muaki-orange font-semibold">About</a>
+                <a href="index.html#companies" class="text-white hover:text-muaki-orange transition-colors">Companies</a>
+                <a href="index.html#projects" class="text-white hover:text-muaki-orange transition-colors">Projects</a>
+                <a href="careers.html" class="text-white hover:text-muaki-orange transition-colors">Careers</a>
+                <a href="contact.html" class="text-white hover:text-muaki-orange transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar" class="fixed inset-0 z-50 transform translate-x-full transition-transform duration-300 md:hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-50" id="sidebar-overlay"></div>
+        <div class="absolute right-0 top-0 h-full w-80 bg-muaki-navy shadow-xl">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-8">
+                    <div class="text-white text-xl font-bold">
+                        <span class="text-muaki-orange">MUAKI</span> Menu
+                    </div>
+                    <button id="close-sidebar" class="text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="space-y-6">
+                    <a href="index.html" class="block text-white text-lg hover:text-muaki-orange transition-colors sidebar-link">Home</a>
+                    <a href="about.html" class="block text-muaki-orange text-lg font-semibold sidebar-link">About</a>
+                    <a href="index.html#companies" class="block text-white text-lg hover:text-muaki-orange transition-colors sidebar-link">Companies</a>
+                    <a href="index.html#projects" class="block text-white text-lg hover:text-muaki-orange transition-colors sidebar-link">Projects</a>
+                    <a href="careers.html" class="block text-white text-lg hover:text-muaki-orange transition-colors sidebar-link">Careers</a>
+                    <a href="contact.html" class="block text-white text-lg hover:text-muaki-orange transition-colors sidebar-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center parallax-bg" style="background-image: linear-gradient(rgba(30, 58, 138, 0.8), rgba(255, 107, 53, 0.8)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="text-center text-white px-6 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in">About <span class="text-muaki-orange">Muaki</span></h1>
+            <p class="text-xl md:text-2xl mb-8 fade-in">Building Tomorrow's Business Ecosystem Today</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
+                <a href="#ceo-message" class="bg-muaki-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105">
+                    CEO Message
+                </a>
+                <a href="#group-structure" class="border-2 border-white text-white hover:bg-white hover:text-muaki-navy px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105">
+                    Our Structure
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-muaki-navy mb-6">Our Story</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">From humble beginnings to a thriving business ecosystem, Muaki Business Park represents the vision of sustainable growth and community development.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div class="slide-in-left">
+                    <h3 class="text-3xl font-bold text-muaki-navy mb-6">Excellence Through Diversity</h3>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Muaki Business Park stands as a testament to the power of diversified business excellence. Our journey began with a simple vision: to create a business ecosystem where different industries could thrive together, sharing resources, knowledge, and opportunities.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Today, we operate across six distinct sectors - real estate, construction, automotive, healthcare technology, fitness, and investments - each contributing to our collective strength and community impact.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-muaki-orange mb-2">6</div>
+                            <p class="text-gray-600">Business Sectors</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-muaki-orange mb-2">500+</div>
+                            <p class="text-gray-600">Jobs Created</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-in-right">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Business Meeting" class="rounded-2xl shadow-xl w-full h-96 object-cover" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'bg-gradient-to-br from-muaki-navy to-muaki-orange rounded-2xl h-96 flex items-center justify-center\'><svg class=\'w-24 h-24 text-white\' fill=\'currentColor\' viewBox=\'0 0 20 20\'><path d=\'M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z\'/></svg></div>';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO Message Section -->
+<section id="ceo-message" class="py-20 bg-muaki-light-gray">
+    <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-muaki-navy mb-6">Message from Our CEO</h2>
+                <p class="text-xl text-gray-600">Leadership vision for sustainable growth and community impact</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12 items-start">
+                <!-- CEO Photo and Info -->
+                <!-- CEO Photo and Info -->
+<div class="md:col-span-1 slide-in-left">
+    <div class="bg-white rounded-2xl p-8 shadow-xl text-center">
+        <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-muaki-orange">
+            <img src="images/chuma.jpg" alt="Nhlamulo Chuma" class="w-full h-full object-cover">
+        </div>
+
+                        <h3 class="text-2xl font-bold text-muaki-navy mb-2">Nhlamulo Chuma</h3>
+                        <p class="text-muaki-orange font-semibold mb-1">Chief Executive Officer & Founder</p>
+                        <p class="text-gray-600 text-sm mb-4">Electrical & Civil Engineer | Business Strategist</p>
+                        <div class="text-sm text-gray-600 space-y-2 text-left">
+                            <p><i class="fas fa-map-marker-alt text-muaki-orange"></i> Based in Limpopo Province</p>
+                            <p><i class="fas fa-graduation-cap text-muaki-orange"></i> BCom Accounting, University of South Africa (2014 - 2018)</p>
+                            <p><i class="fas fa-graduation-cap text-muaki-orange"></i> BTech Electrical Engineering, Tshwane University of Technology (2015 - 2017)</p>
+                            <p><i class="fas fa-graduation-cap text-muaki-orange"></i> N.Dip Electrical Engineering, 2008 - 2012</p>
+                            <p><i class="fas fa-school text-muaki-orange"></i> Matric Certificate (Science & Maths), Mphambo High School (2003 - 2007)</p>
+                            <p><i class="fas fa-id-card text-muaki-orange"></i> Pr Techni Eng, Engineering Council of South Africa (Issued May 2017, Credential ID: 201730023)</p>
+                        </div>
+
+                        <!-- Professional Highlights -->
+                        <div class="mt-6 pt-4 border-t border-gray-200">
+                            <h4 class="font-semibold text-muaki-navy mb-3">Key Achievements</h4>
+                            <div class="space-y-2 text-xs text-gray-600">
+                                <div class="flex items-center justify-center">
+                                    <span class="w-2 h-2 bg-muaki-orange rounded-full mr-2"></span>
+                                    <span>Founded 6 successful companies</span>
+                                </div>
+                                <div class="flex items-center justify-center">
+                                    <span class="w-2 h-2 bg-muaki-navy rounded-full mr-2"></span>
+                                    <span>500+ jobs created in rural areas</span>
+                                </div>
+                                <div class="flex items-center justify-center">
+                                    <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                    <span>Major infrastructure projects delivered</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CEO Message -->
+                <div class="md:col-span-2 slide-in-right">
+                    <div class="bg-white rounded-2xl p-8 shadow-xl">
+                        <div class="text-6xl text-muaki-orange mb-6">"</div>
+                        <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+                            <p>
+                                <strong class="text-muaki-navy">Welcome to Muaki Business Park</strong> - where engineering precision meets entrepreneurial vision, and sustainable development becomes reality. As an electrical and civil engineer turned business leader, I founded this company with a fundamental understanding: strong foundations create lasting success, whether in construction or commerce.
+                            </p>
+                            <p>
+                                My background in engineering and accounting taught me the importance of structural integrity, careful planning, and building for the long term. These principles now guide our diversified business ecosystem spanning multiple industries. From designing infrastructure to developing properties, from automotive services to healthcare technology - each venture is built on solid engineering principles and strategic business thinking.
+                            </p>
+                            <p>
+                                <strong class="text-muaki-navy">What sets us apart</strong> is our systematic approach to business development, rooted in engineering methodology. We analyze, design, and build sustainable solutions. Our construction division leverages my engineering expertise, while our other companies benefit from the same methodical approach to problem-solving and quality assurance.
+                            </p>
+                            <p>
+                                The communities of Limpopo and Gauteng are not just our markets - they're our foundation. Every infrastructure project we complete, every job we create, and every service we provide is designed to deliver maximum community impact. We're building more than businesses; we're constructing the framework for regional economic growth.
+                            </p>
+                            <p>
+                                <strong class="text-muaki-navy">Looking ahead</strong>, our expansion plans are as carefully engineered as our buildings. We're not just growing businesses; we're architecting a legacy of sustainable development, community empowerment, and economic transformation that will stand the test of time.
+                            </p>
+                            <p class="text-muaki-navy font-semibold">
+                                Thank you for trusting in our vision. Together, we're not just building businesses - we're engineering the future of our communities.
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-gray-200">
+                            <div class="flex items-center">
+                                <div class="w-16 h-1 bg-muaki-orange mr-4"></div>
+                                <div>
+                                    <p class="font-bold text-muaki-navy">Nhlamulo Chuma</p>
+                                    <p class="text-gray-600">Chief Executive Officer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Company Values -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-muaki-navy mb-6">Our Core Values</h2>
+                <p class="text-xl text-gray-600">The principles that guide everything we do</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="value-card bg-gradient-to-br from-muaki-navy to-blue-600 rounded-2xl p-8 text-white text-center fade-in">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold mb-4">Excellence</h3>
+                    <p class="text-blue-200">We strive for the highest standards in everything we do, from service delivery to community impact.</p>
+                </div>
+                
+                <div class="value-card bg-gradient-to-br from-muaki-orange to-orange-600 rounded-2xl p-8 text-white text-center fade-in">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold mb-4">Integrity</h3>
+                    <p class="text-orange-200">Honesty, transparency, and ethical business practices form the foundation of all our relationships.</p>
+                </div>
+                
+                <div class="value-card bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-8 text-white text-center fade-in">
+                    <div class="text-4xl mb-4">🌱</div>
+                    <h3 class="text-xl font-bold mb-4">Growth</h3>
+                    <p class="text-green-200">We believe in continuous improvement, innovation, and sustainable development for all stakeholders.</p>
+                </div>
+                
+                <div class="value-card bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-8 text-white text-center fade-in">
+                    <div class="text-4xl mb-4">❤️</div>
+                    <h3 class="text-xl font-bold mb-4">Community</h3>
+                    <p class="text-purple-200">Our success is measured by the positive impact we have on the communities we serve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Culture Section -->
+    <section class="py-20 bg-muaki-light-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-muaki-navy mb-6">Our Work Culture</h2>
+                <p class="text-xl text-gray-600">Where passion meets purpose, and every team member thrives</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="slide-in-left">
+                    <h3 class="text-3xl font-bold text-muaki-navy mb-6">A Place Where You Belong</h3>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        At Muaki Business Park, we've created more than just workplaces - we've built communities. Our culture is rooted in respect, collaboration, and the shared belief that when our people succeed, our businesses succeed.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        We celebrate diversity, encourage innovation, and provide the support and resources our team members need to grow both professionally and personally.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="culture-icon text-4xl mb-3">🎓</div>
+                            <h4 class="font-bold text-muaki-navy mb-2">Learning & Development</h4>
+                            <p class="text-sm text-gray-600">Continuous skill building and career advancement opportunities</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="culture-icon text-4xl mb-3">⚖️</div>
+                            <h4 class="font-bold text-muaki-navy mb-2">Work-Life Balance</h4>
+                            <p class="text-sm text-gray-600">Flexible schedules and wellness programs for all employees</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="culture-icon text-4xl mb-3">🏆</div>
+                            <h4 class="font-bold text-muaki-navy mb-2">Recognition</h4>
+                            <p class="text-sm text-gray-600">Regular appreciation and rewards for outstanding performance</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="culture-icon text-4xl mb-3">🌍</div>
+                            <h4 class="font-bold text-muaki-navy mb-2">Impact</h4>
+                            <p class="text-sm text-gray-600">Meaningful work that makes a difference in our communities</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-in-right">
+                    <div class="bg-white rounded-2xl p-8 shadow-xl">
+                        <h4 class="text-2xl font-bold text-muaki-navy mb-6">What Our Team Says</h4>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-muaki-orange pl-6">
+                                <p class="text-gray-600 italic mb-3">"Working at Muaki has been transformative. The opportunities for growth and the supportive environment make every day exciting."</p>
+                                <p class="font-semibold text-muaki-navy">- Tsakani M., Project Manager</p>
+                            </div>
+                            <div class="border-l-4 border-muaki-navy pl-6">
+                                <p class="text-gray-600 italic mb-3">"The diversity of our business portfolio means I'm constantly learning new things. It's never boring here!"</p>
+                                <p class="font-semibold text-muaki-navy">- Rhulani K., Operations Coordinator</p>
+                            </div>
+                            <div class="border-l-4 border-green-500 pl-6">
+                                <p class="text-gray-600 italic mb-3">"I love that my work directly impacts our community. We're not just building businesses, we're building futures."</p>
+                                <p class="font-semibold text-muaki-navy">- Nomsa T., Community Relations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Culture Stats -->
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="bg-white rounded-2xl p-6 shadow-lg fade-in">
+                    <div class="text-3xl font-bold text-muaki-orange mb-2">95%</div>
+                    <p class="text-gray-600">Employee Satisfaction</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg fade-in">
+                    <div class="text-3xl font-bold text-muaki-navy mb-2">40+</div>
+                    <p class="text-gray-600">Training Programs</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg fade-in">
+                    <div class="text-3xl font-bold text-green-600 mb-2">85%</div>
+                    <p class="text-gray-600">Internal Promotions</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg fade-in">
+                    <div class="text-3xl font-bold text-purple-600 mb-2">24/7</div>
+                    <p class="text-gray-600">Employee Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Group Structure Section -->
+    <section id="group-structure" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-muaki-navy mb-6">Group Structure</h2>
+                <p class="text-xl text-gray-600">A comprehensive business ecosystem designed for sustainable growth</p>
+            </div>
+            
+            <!-- Organizational Chart -->
+            <div class="max-w-6xl mx-auto mb-16">
+                <!-- CEO Level -->
+                <div class="text-center mb-12 fade-in">
+                    <div class="inline-block bg-gradient-to-br from-muaki-navy to-blue-600 rounded-2xl p-8 text-white shadow-xl">
+                        <div class="text-3xl mb-3">👑</div>
+                        <h3 class="text-xl font-bold mb-2">Nhlamulo Chuma</h3>
+                        <p class="text-blue-200">Chief Executive Officer & Founder</p>
+                        <p class="text-sm text-blue-300 mt-2">Civil Engineer | Business Strategist</p>
+                    </div>
+                </div>
+                
+                <!-- Connecting Lines -->
+                <div class="flex justify-center mb-8">
+                    <div class="w-1 h-12 bg-muaki-orange"></div>
+                </div>
+                
+                <!-- Business Divisions -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Properties Division -->
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-6 text-white text-center shadow-lg fade-in">
+                        <div class="text-3xl mb-4">🏢</div>
+                        <h4 class="text-lg font-bold mb-2">Muaki Properties</h4>
+                        <p class="text-blue-200 text-sm mb-4">Real Estate Development & Sales</p>
+                        <div class="text-xs text-blue-300">
+                            <p>• Property Development</p>
+                            <p>• Real Estate Sales</p>
+                            <p>• Property Management</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Construction Division -->
+                    <div class="bg-gradient-to-br from-muaki-orange to-orange-600 rounded-2xl p-6 text-white text-center shadow-lg fade-in">
+                        <div class="text-3xl mb-4">🏗️</div>
+                        <h4 class="text-lg font-bold mb-2">Muaki Group Construction</h4>
+                        <p class="text-orange-200 text-sm mb-4">Civil Engineering & Construction</p>
+                        <div class="text-xs text-orange-300">
+                            <p>• Civil Engineering</p>
+                            <p>• Commercial Construction</p>
+                            <p>• Infrastructure Development</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Motor Centre -->
+                    <div class="bg-gradient-to-br from-gray-600 to-gray-700 rounded-2xl p-6 text-white text-center shadow-lg fade-in">
+                        <div class="text-3xl mb-4">🚗</div>
+                        <h4 class="text-lg font-bold mb-2">Muaki Motor Centre</h4>
+                        <p class="text-gray-300 text-sm mb-4">Automotive Services</p>
+                        <div class="text-xs text-gray-400">
+                            <p>• Vehicle Repairs</p>
+                            <p>• Maintenance Services</p>
+                            <p>• Parts & Accessories</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Powamed -->
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-6 text-white text-center shadow-lg fade-in">
+                        <div class="text-3xl mb-4">🏥</div>
+                        <h4 class="text-lg font-bold mb-2">Powamed</h4>
+                        <p class="text-green-200 text-sm mb-4">Healthcare Technology</p>
+                        <div class="text-xs text-green-300">
+                            <p>• Medical Equipment</p>
+                            <p>• Healthcare Solutions</p>
+                            <p>• Technical Support</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fitness -->
+                    <div class="bg-gradient-to-br from-red-500 to-red-600 rounded-2xl p-6 text-white text-center shadow-lg fade-in">
+                        <div class="text-3xl mb-4">💪</div>
+                        <h4 class="text-lg font-bold mb-2">Muaki Fitness</h4>
+                        <p class="text-red-200 text-sm mb-4">Health & Wellness</p>
+                        <div class="text-xs text-red-300">
+                            <p>• Fitness Centers</p>
+                            <p>• Personal Training</p>
+                            <p>• Wellness Programs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Investments -->
+                    <div class="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl p-6 text-white text-center shadow-lg fade-in">
+                        <div class="text-3xl mb-4">💰</div>
+                        <h4 class="text-lg font-bold mb-2">Muaki Investments</h4>
+                        <p class="text-yellow-200 text-sm mb-4">Financial Services</p>
+                        <div class="text-xs text-yellow-300">
+                            <p>• Investment Management</p>
+                            <p>• Financial Planning</p>
+                            <p>• Portfolio Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Group Statistics -->
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="bg-muaki-light-gray rounded-2xl p-6 shadow-lg fade-in">
+                    <div class="text-3xl font-bold text-muaki-orange mb-2">6</div>
+                    <p class="text-gray-600">Business Divisions</p>
+                </div>
+                <div class="bg-muaki-light-gray rounded-2xl p-6 shadow-lg fade-in">
+                    <div class="text-3xl font-bold text-muaki-navy mb-2">500+</div>
+                    <p class="text-gray-600">Jobs Created</p>
+                </div>
+                <div class="bg-muaki-light-gray rounded-2xl p-6 shadow-lg fade-in">
+                    <div class="text-3xl font-bold text-green-600 mb-2">2</div>
+                    <p class="text-gray-600">Provinces Served</p>
+                </div>
+                <div class="bg-muaki-light-gray rounded-2xl p-6 shadow-lg fade-in">
+                    <div class="text-3xl font-bold text-purple-600 mb-2">15+</div>
+                    <p class="text-gray-600">Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Licenses & Certifications -->
+    <section class="py-20 bg-muaki-light-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-muaki-navy mb-6">Licenses & Certifications</h2>
+                <p class="text-xl text-gray-600">Fully compliant and certified across all business operations</p>
+            </div>
+            
+            <div class="max-w-6xl mx-auto">
+                <!-- Main Certifications Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <!-- Construction Licenses -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-muaki-orange fade-in">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-muaki-orange rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-muaki-navy">Construction Licenses</h3>
+                                <p class="text-gray-600 text-sm">Civil Engineering & Construction</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                <span class="text-sm">CIDB Registration Certificate</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                <span class="text-sm">Professional Engineering Council (ECSA)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                <span class="text-sm">Municipal Building Permits</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                <span class="text-sm">Health & Safety Compliance</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Business Registration -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-muaki-navy fade-in">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-muaki-navy rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-muaki-navy">Business Registration</h3>
+                                <p class="text-gray-600 text-sm">Legal & Compliance</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                <span class="text-sm">Companies & Intellectual Property Commission (CIPC)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                <span class="text-sm">South African Revenue Service (SARS)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                <span class="text-sm">B-BBEE Certification</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                <span class="text-sm">Municipal Business Licenses</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Industry Specific -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-green-500 fade-in">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                                    <path fill-rule="evenodd" d="M4 5a2 2 0 012-2h8a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 1a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-muaki-navy">Industry Certifications</h3>
+                                <p class="text-gray-600 text-sm">Specialized Compliance</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                <span class="text-sm">Real Estate Board Certification</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                <span class="text-sm">Automotive Industry Compliance</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                <span class="text-sm">Healthcare Equipment Certification</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                <span class="text-sm">Financial Services Board (FSB)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Compliance Statement -->
+                <div class="bg-gradient-to-r from-muaki-navy to-muaki-orange rounded-2xl p-8 text-white text-center fade-in">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="text-4xl mb-6">🏆</div>
+                        <h3 class="text-2xl font-bold mb-4">Commitment to Excellence & Compliance</h3>
+                        <p class="text-lg mb-6 text-blue-100">
+                            Muaki Business Park maintains the highest standards of legal compliance, professional certification, and industry best practices across all our business divisions. Our commitment to regulatory excellence ensures that our clients, partners, and communities can trust in our professional integrity and operational reliability.
+                        </p>
+                        <div class="grid md:grid-cols-3 gap-6 text-center">
+                            <div>
+                                <div class="text-2xl font-bold mb-2">100%</div>
+                                <p class="text-sm text-blue-200">Compliance Rate</p>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold mb-2">15+</div>
+                                <p class="text-sm text-blue-200">Active Certifications</p>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold mb-2">Annual</div>
+                                <p class="text-sm text-blue-200">Compliance Audits</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-muaki-navy text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
+                <p class="text-xl text-blue-200">Ready to join our team or learn more about our company?</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="slide-in-left">
+                    <h3 class="text-2xl font-bold mb-6 text-muaki-orange">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-muaki-orange mr-4 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"/>
+                            </svg>
+                            <div>
+                                <p class="font-semibold text-white mb-1">Limpopo Branch:</p>
+                                <p class="text-blue-200 text-sm">Stand number ERF 85, R81, Mphambo Village, Malamulele, 0982</p>
+                                <p class="font-semibold text-white mb-1 mt-3">Gauteng Branch:</p>
+                                <p class="text-blue-200 text-sm">1693 Theka Street, Phomolong 1635</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-muaki-orange mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <span>010 035 0177</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-muaki-orange mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <span>sales@muakigroup.co.za</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-muaki-orange mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <span>careers@muakigroup.co.za</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-in-right">
+                    <form class="space-y-6">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white placeholder-blue-200 focus:outline-none focus:border-muaki-orange">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white placeholder-blue-200 focus:outline-none focus:border-muaki-orange">
+                        </div>
+                        <div>
+                            <select class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white focus:outline-none focus:border-muaki-orange">
+                                <option value="" class="text-gray-800">Select Inquiry Type</option>
+                                <option value="career" class="text-gray-800">Career Opportunities</option>
+                                <option value="general" class="text-gray-800">General Information</option>
+                                <option value="partnership" class="text-gray-800">Partnership Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea rows="4" placeholder="Your Message" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white placeholder-blue-200 focus:outline-none focus:border-muaki-orange resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-muaki-orange hover:bg-orange-600 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="text-3xl font-bold mb-4">
+                        <span class="text-muaki-orange">MUAKI</span> Business Park
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">Excellence in Business, Innovation in Growth. A dynamic business ecosystem bringing together diverse industries under one unified vision.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=." target="_blank" rel="noopener noreferrer" class="bg-muaki-navy hover:bg-muaki-orange p-3 rounded-full transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/muakigroup.construction/" target="_blank" rel="noopener noreferrer" class="bg-muaki-navy hover:bg-muaki-orange p-3 rounded-full transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323C6.001 8.198 7.152 7.708 8.449 7.708s2.448.49 3.323 1.416c.875.926 1.365 2.077 1.365 3.374s-.49 2.448-1.365 3.323c-.875.875-2.026 1.167-3.323 1.167zm7.718 0c-1.297 0-2.448-.49-3.323-1.297-.875-.926-1.365-2.077-1.365-3.374s.49-2.448 1.365-3.323c.875-.926 2.026-1.416 3.323-1.416s2.448.49 3.323 1.416c.875.926 1.365 2.077 1.365 3.374s-.49 2.448-1.365 3.323c-.875.875-2.026 1.167-3.323 1.167z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/27780901750" target="_blank" rel="noopener noreferrer" class="bg-muaki-navy hover:bg-muaki-orange p-3 rounded-full transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-muaki-orange">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-muaki-orange">About Us</a></li>
+                        <li><a href="index.html#companies" class="text-gray-400 hover:text-white transition-colors">Our Companies</a></li>
+                        <li><a href="index.html#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="#group-structure" class="text-gray-400 hover:text-white transition-colors">Group Structure</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Our Companies -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-muaki-orange">Our Companies</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Muaki Properties</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Muaki Group</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Muaki Motor Centre</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Powamed</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Muaki Fitness</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Muaki Investments</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-500 text-sm mb-4 md:mb-0">
+                    <p>&copy; 2024 Muaki Business Park. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-muaki-orange transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-muaki-orange transition-colors">Terms of Service</a>
+                    <a href="#group-structure" class="text-gray-400 hover:text-muaki-orange transition-colors">Group Structure</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .timeline-item').forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('navbar-scroll');
+            } else {
+                navbar.classList.remove('navbar-scroll');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile sidebar functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileSidebar = document.getElementById('mobile-sidebar');
+        const closeSidebar = document.getElementById('close-sidebar');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
+        const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+        function openSidebar() {
+            mobileSidebar.classList.remove('translate-x-full');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSidebarMenu() {
+            mobileSidebar.classList.add('translate-x-full');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuBtn.addEventListener('click', openSidebar);
+        closeSidebar.addEventListener('click', closeSidebarMenu);
+        sidebarOverlay.addEventListener('click', closeSidebarMenu);
+
+        // Close sidebar when clicking on links
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', closeSidebarMenu);
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Career application buttons
+        document.querySelectorAll('.career-card button').forEach(button => {
+            button.addEventListener('click', function() {
+                const jobTitle = this.closest('.career-card').querySelector('h5').textContent;
+                const company = this.closest('.career-card').querySelector('h4').textContent;
+                
+                // Create email subject and body
+                const subject = `Application for ${jobTitle} at ${company}`;
+                const body = `Dear Hiring Manager,
+
+I am interested in applying for the ${jobTitle} position at ${company}. Please find my CV attached.
+
+I look forward to hearing from you.
+
+Best regards,
+[Your Name]`;
+                
+                // Open email client
+                window.open(`mailto:careers@muakigroup.co.za?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, '_blank');
+            });
+        });
+
+        // Add some interactive elements
+        document.querySelectorAll('.culture-icon').forEach(icon => {
+            icon.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.2) rotate(10deg)';
+            });
+            
+            icon.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1) rotate(0deg)';
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9832173804e63575',t:'MTc1ODU0NzEzMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

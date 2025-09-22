@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers at Muaki Business Park</title>
+  <meta name="title" content="Careers at Muaki Business Park">
+  <meta name="description" content="Join our team and explore exciting career opportunities across our diverse industries.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.muakigroup.co.za/careers.html">
+  <meta property="og:title" content="Careers at Muaki Business Park">
+  <meta property="og:description" content="Explore career opportunities at Muaki Business Park across Real Estate, Construction, Automotive, Medical, Fitness, and Investments.">
+  <meta property="og:image" content="https://www.muakigroup.co.za/images/logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.muakigroup.co.za/careers.html">
+  <meta property="twitter:title" content="Careers at Muaki Business Park">
+  <meta property="twitter:description" content="Discover exciting career paths and join Muaki’s growing team.">
+  <meta property="twitter:image" content="https://www.muakigroup.co.za/images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'muaki-orange': '#FF6B35',
+                        'muaki-navy': '#1E3A8A',
+                        'muaki-light-gray': '#F3F4F6'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .navbar-scroll {
+            backdrop-filter: blur(10px);
+            background: rgba(30, 58, 138, 0.95);
+        }
+        
+        .career-card {
+            transition: all 0.3s ease;
+        }
+        
+        .career-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-card {
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .job-filter-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .job-filter-btn.active {
+            background: linear-gradient(135deg, #FF6B35, #FF8A65);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .application-modal {
+            backdrop-filter: blur(10px);
+            background: rgba(0, 0, 0, 0.8);
+        }
+        
+        .modal-content {
+            animation: modalSlideIn 0.3s ease-out;
+        }
+        
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* =====  MOBILE  ===== */
+@media (max-width: 767px) {
+  html, body {
+    overflow-x: hidden;   /* never allow horizontal scroll */
+    width: 100vw;         /* force exact viewport width */
+  }
+  /* optional – make images & video never break the layout */
+  img, video, iframe, svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-2 text-white text-2xl font-bold">
+  <a href="index.html" class="flex items-center space-x-2">
+    <img src="images/Untitled design.png" alt="MUAKI Logo" class="w-10 h-10 rounded-full">
+    <span><span class="text-muaki-orange">MUAKI</span> Business Park</span>
+  </a>
+</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-white hover:text-muaki-orange transition-colors">Home</a>
+                <a href="about.html" class="text-white hover:text-muaki-orange transition-colors">About</a>
+                <a href="index.html#companies" class="text-white hover:text-muaki-orange transition-colors">Companies</a>
+                <a href="index.html#projects" class="text-white hover:text-muaki-orange transition-colors">Projects</a>
+                <a href="careers.html" class="text-muaki-orange font-semibold">Careers</a>
+                <a href="contact.html" class="text-white hover:text-muaki-orange transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar" class="fixed inset-0 z-50 transform translate-x-full transition-transform duration-300 md:hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-50" id="sidebar-overlay"></div>
+        <div class="absolute right-0 top-0 h-full w-80 bg-muaki-navy shadow-xl">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-8">
+                    <div class="text-white text-xl font-bold">
+                        <span class="text-muaki-orange">MUAKI</span> Menu
+                    </div>
+                    <button id="close-sidebar" class="text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="space-y-6">
+                    <a href="index.html" class="block text-white text-lg hover:text-muaki-orange transition-colors sidebar-link">Home</a>
+                    <a href="about.html" class="block text-white text-lg hover:text-muaki-orange transition-colors sidebar-link">About</a>
+                    <a href="index.html#companies" class="block text-white text-lg hover:text-muaki-orange transition-colors sidebar-link">Companies</a>
+                    <a href="index.html#projects" class="block text-white text-lg hover:text-muaki-orange transition-colors sidebar-link">Projects</a>
+                    <a href="careers.html" class="block text-muaki-orange text-lg font-semibold sidebar-link">Careers</a>
+                    <a href="contact.html" class="block text-white text-lg hover:text-muaki-orange transition-colors sidebar-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center parallax-bg" style="background-image: linear-gradient(rgba(30, 58, 138, 0.8), rgba(255, 107, 53, 0.8)), url('images/careers.jpg');">
+        <div class="text-center text-white px-6 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in">Join Our <span class="text-muaki-orange">Team</span></h1>
+            <p class="text-xl md:text-2xl mb-8 fade-in">Build Your Career with South Africa's Most Dynamic Business Ecosystem</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
+                <a href="#open-positions" class="bg-muaki-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105">
+                    View Open Positions
+                </a>
+                <a href="#why-join-us" class="border-2 border-white text-white hover:bg-white hover:text-muaki-navy px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105">
+                    Why Join Us?
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Us Section -->
+    <section id="why-join-us" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-muaki-navy mb-6">Why Choose Muaki?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Join a company that values growth, innovation, and community impact. Your career journey starts here.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="benefit-card bg-gradient-to-br from-muaki-navy to-blue-600 rounded-2xl p-8 text-white text-center fade-in">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-bold mb-4">Career Growth</h3>
+                    <p class="text-blue-200">Fast-track your career with opportunities across 6 diverse business sectors and continuous learning programs.</p>
+                </div>
+                
+                <div class="benefit-card bg-gradient-to-br from-muaki-orange to-orange-600 rounded-2xl p-8 text-white text-center fade-in">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold mb-4">Competitive Benefits</h3>
+                    <p class="text-orange-200">Attractive salary packages, performance bonuses, medical aid, and retirement fund contributions.</p>
+                </div>
+                
+                <div class="benefit-card bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-8 text-white text-center fade-in">
+                    <div class="text-4xl mb-4">⚖️</div>
+                    <h3 class="text-xl font-bold mb-4">Work-Life Balance</h3>
+                    <p class="text-green-200">Flexible working arrangements, wellness programs, and a supportive work environment.</p>
+                </div>
+                
+                <div class="benefit-card bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-8 text-white text-center fade-in">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h3 class="text-xl font-bold mb-4">Learning & Development</h3>
+                    <p class="text-purple-200">Skills development programs, mentorship opportunities, and support for further education.</p>
+                </div>
+                
+                <div class="benefit-card bg-gradient-to-br from-red-500 to-red-600 rounded-2xl p-8 text-white text-center fade-in">
+                    <div class="text-4xl mb-4">🌍</div>
+                    <h3 class="text-xl font-bold mb-4">Community Impact</h3>
+                    <p class="text-red-200">Be part of meaningful work that creates jobs and drives economic development in rural communities.</p>
+                </div>
+                
+                <div class="benefit-card bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl p-8 text-white text-center fade-in">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold mb-4">Inclusive Culture</h3>
+                    <p class="text-yellow-200">Join a diverse, inclusive workplace where every voice is heard and every contribution valued.</p>
+                </div>
+            </div>
+            
+            <!-- Company Stats -->
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="fade-in">
+                    <div class="text-4xl font-bold text-muaki-orange mb-2">500+</div>
+                    <p class="text-gray-600">Team Members</p>
+                </div>
+                <div class="fade-in">
+                    <div class="text-4xl font-bold text-muaki-navy mb-2">6</div>
+                    <p class="text-gray-600">Business Sectors</p>
+                </div>
+                <div class="fade-in">
+                    <div class="text-4xl font-bold text-green-600 mb-2">95%</div>
+                    <p class="text-gray-600">Employee Satisfaction</p>
+                </div>
+                <div class="fade-in">
+                    <div class="text-4xl font-bold text-purple-600 mb-2">15+</div>
+                    <p class="text-gray-600">Years of Excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions Section -->
+    <section id="open-positions" class="py-20 bg-muaki-light-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-muaki-navy mb-6">Open Positions</h2>
+                <p class="text-xl text-gray-600">Discover exciting career opportunities across our business divisions</p>
+            </div>
+            
+            <!-- Job Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12 fade-in">
+                <button class="job-filter-btn active px-6 py-3 rounded-full bg-white text-muaki-navy font-semibold shadow-lg" data-filter="all">
+                    All Positions
+                </button>
+                <button class="job-filter-btn px-6 py-3 rounded-full bg-white text-muaki-navy font-semibold shadow-lg" data-filter="properties">
+                    Properties
+                </button>
+                <button class="job-filter-btn px-6 py-3 rounded-full bg-white text-muaki-navy font-semibold shadow-lg" data-filter="construction">
+                    Construction
+                </button>
+                <button class="job-filter-btn px-6 py-3 rounded-full bg-white text-muaki-navy font-semibold shadow-lg" data-filter="automotive">
+                    Automotive
+                </button>
+                <button class="job-filter-btn px-6 py-3 rounded-full bg-white text-muaki-navy font-semibold shadow-lg" data-filter="healthcare">
+                    Healthcare
+                </button>
+                <button class="job-filter-btn px-6 py-3 rounded-full bg-white text-muaki-navy font-semibold shadow-lg" data-filter="fitness">
+                    Fitness
+                </button>
+                <button class="job-filter-btn px-6 py-3 rounded-full bg-white text-muaki-navy font-semibold shadow-lg" data-filter="investments">
+                    Investments
+                </button>
+            </div>
+            
+            <!-- Job Listings -->
+            <div id="job-listings" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Properties Jobs -->
+                <div class="career-card bg-white rounded-2xl p-8 shadow-lg border-l-4 border-blue-500 fade-in" data-category="properties">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-muaki-navy">Muaki Properties</h4>
+                            <p class="text-gray-600">Real Estate Division</p>
+                        </div>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-800 mb-3">Property Sales Consultant</h5>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><span class="font-semibold">Location:</span> Limpopo & Gauteng</p>
+                        <p><span class="font-semibold">Type:</span> Full-time</p>
+                        <p><span class="font-semibold">Experience:</span> 2+ years</p>
+                    </div>
+                    <p class="text-gray-700 mb-6">Drive property sales, build client relationships, and contribute to our expanding real estate portfolio across two provinces.</p>
+                    <button class="apply-btn w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105" 
+                            data-job="Property Sales Consultant" data-company="Muaki Properties">
+                        Apply Now
+                    </button>
+                </div>
+
+                <div class="career-card bg-white rounded-2xl p-8 shadow-lg border-l-4 border-blue-500 fade-in" data-category="properties">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-muaki-navy">Muaki Properties</h4>
+                            <p class="text-gray-600">Real Estate Division</p>
+                        </div>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-800 mb-3">Property Manager</h5>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><span class="font-semibold">Location:</span> Limpopo</p>
+                        <p><span class="font-semibold">Type:</span> Full-time</p>
+                        <p><span class="font-semibold">Experience:</span> 3+ years</p>
+                    </div>
+                    <p class="text-gray-700 mb-6">Oversee property portfolios, manage tenant relationships, and ensure optimal property performance and maintenance.</p>
+                    <button class="apply-btn w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105" 
+                            data-job="Property Manager" data-company="Muaki Properties">
+                        Apply Now
+                    </button>
+                </div>
+
+                <!-- Construction Jobs -->
+                <div class="career-card bg-white rounded-2xl p-8 shadow-lg border-l-4 border-muaki-orange fade-in" data-category="construction">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-muaki-orange rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-muaki-navy">Muaki Group Construction</h4>
+                            <p class="text-gray-600">Construction Division</p>
+                        </div>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-800 mb-3">Civil Engineer</h5>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><span class="font-semibold">Location:</span> Limpopo & Gauteng</p>
+                        <p><span class="font-semibold">Type:</span> Full-time</p>
+                        <p><span class="font-semibold">Experience:</span> 3+ years</p>
+                    </div>
+                    <p class="text-gray-700 mb-6">Lead infrastructure projects, design solutions, and ensure quality construction delivery across our development portfolio.</p>
+                    <button class="apply-btn w-full bg-muaki-orange hover:bg-orange-600 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105" 
+                            data-job="Civil Engineer" data-company="Muaki Group Construction">
+                        Apply Now
+                    </button>
+                </div>
+
+                <div class="career-card bg-white rounded-2xl p-8 shadow-lg border-l-4 border-muaki-orange fade-in" data-category="construction">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-muaki-orange rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-muaki-navy">Muaki Group Construction</h4>
+                            <p class="text-gray-600">Construction Division</p>
+                        </div>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-800 mb-3">Project Manager</h5>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><span class="font-semibold">Location:</span> Limpopo</p>
+                        <p><span class="font-semibold">Type:</span> Full-time</p>
+                        <p><span class="font-semibold">Experience:</span> 5+ years</p>
+                    </div>
+                    <p class="text-gray-700 mb-6">Manage construction projects from inception to completion, ensuring timely delivery and quality standards.</p>
+                    <button class="apply-btn w-full bg-muaki-orange hover:bg-orange-600 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105" 
+                            data-job="Project Manager" data-company="Muaki Group Construction">
+                        Apply Now
+                    </button>
+                </div>
+
+                <!-- Automotive Jobs -->
+                <div class="career-card bg-white rounded-2xl p-8 shadow-lg border-l-4 border-gray-600 fade-in" data-category="automotive">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                                <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1V8a1 1 0 00-1-1h-3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-muaki-navy">Muaki Motor Centre</h4>
+                            <p class="text-gray-600">Automotive Division</p>
+                        </div>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-800 mb-3">Automotive Technician</h5>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><span class="font-semibold">Location:</span> Limpopo</p>
+                        <p><span class="font-semibold">Type:</span> Full-time</p>
+                        <p><span class="font-semibold">Experience:</span> 2+ years</p>
+                    </div>
+                    <p class="text-gray-700 mb-6">Diagnose, repair, and maintain vehicles with expertise in modern automotive systems and customer service excellence.</p>
+                    <button class="apply-btn w-full bg-gray-600 hover:bg-gray-700 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105" 
+                            data-job="Automotive Technician" data-company="Muaki Motor Centre">
+                        Apply Now
+                    </button>
+                </div>
+
+                <div class="career-card bg-white rounded-2xl p-8 shadow-lg border-l-4 border-gray-600 fade-in" data-category="automotive">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-muaki-navy">Muaki Motor Centre</h4>
+                            <p class="text-gray-600">Automotive Division</p>
+                        </div>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-800 mb-3">Service Advisor</h5>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><span class="font-semibold">Location:</span> Limpopo</p>
+                        <p><span class="font-semibold">Type:</span> Full-time</p>
+                        <p><span class="font-semibold">Experience:</span> 1+ years</p>
+                    </div>
+                    <p class="text-gray-700 mb-6">Be the bridge between customers and technicians, providing exceptional service and technical consultation.</p>
+                    <button class="apply-btn w-full bg-gray-600 hover:bg-gray-700 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105" 
+                            data-job="Service Advisor" data-company="Muaki Motor Centre">
+                        Apply Now
+                    </button>
+                </div>
+
+                <!-- Healthcare Jobs -->
+                <div class="career-card bg-white rounded-2xl p-8 shadow-lg border-l-4 border-green-500 fade-in" data-category="healthcare">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-muaki-navy">Powamed</h4>
+                            <p class="text-gray-600">Healthcare Technology</p>
+                        </div>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-800 mb-3">Biomedical Technician</h5>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><span class="font-semibold">Location:</span> Limpopo & Gauteng</p>
+                        <p><span class="font-semibold">Type:</span> Full-time</p>
+                        <p><span class="font-semibold">Experience:</span> 2+ years</p>
+                    </div>
+                    <p class="text-gray-700 mb-6">Maintain and repair medical equipment, ensuring healthcare facilities operate with reliable, safe technology.</p>
+                    <button class="apply-btn w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105" 
+                            data-job="Biomedical Technician" data-company="Powamed">
+                        Apply Now
+                    </button>
+                </div>
+
+                <div class="career-card bg-white rounded-2xl p-8 shadow-lg border-l-4 border-green-500 fade-in" data-category="healthcare">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-muaki-navy">Powamed</h4>
+                            <p class="text-gray-600">Healthcare Technology</p>
+                        </div>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-800 mb-3">Sales Representative</h5>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><span class="font-semibold">Location:</span> Limpopo & Gauteng</p>
+                        <p><span class="font-semibold">Type:</span> Full-time</p>
+                        <p><span class="font-semibold">Experience:</span> 2+ years</p>
+                    </div>
+                    <p class="text-gray-700 mb-6">Drive healthcare equipment sales, build relationships with medical facilities, and expand our market presence.</p>
+                    <button class="apply-btn w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105" 
+                            data-job="Sales Representative" data-company="Powamed">
+                        Apply Now
+                    </button>
+                </div>
+
+                <!-- Fitness Jobs -->
+                <div class="career-card bg-white rounded-2xl p-8 shadow-lg border-l-4 border-red-500 fade-in" data-category="fitness">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-muaki-navy">Muaki Fitness</h4>
+                            <p class="text-gray-600">Health & Wellness</p>
+                        </div>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-800 mb-3">Personal Trainer</h5>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><span class="font-semibold">Location:</span> Limpopo</p>
+                        <p><span class="font-semibold">Type:</span> Full-time / Part-time</p>
+                        <p><span class="font-semibold">Experience:</span> 1+ years</p>
+                    </div>
+                    <p class="text-gray-700 mb-6">Inspire and guide clients toward their fitness goals with personalized training programs and motivational support.</p>
+                    <button class="apply-btn w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105" 
+                            data-job="Personal Trainer" data-company="Muaki Fitness">
+                        Apply Now
+                    </button>
+                </div>
+
+                <div class="career-card bg-white rounded-2xl p-8 shadow-lg border-l-4 border-red-500 fade-in" data-category="fitness">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-muaki-navy">Muaki Fitness</h4>
+                            <p class="text-gray-600">Health & Wellness</p>
+                        </div>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-800 mb-3">Fitness Center Manager</h5>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><span class="font-semibold">Location:</span> Limpopo</p>
+                        <p><span class="font-semibold">Type:</span> Full-time</p>
+                        <p><span class="font-semibold">Experience:</span> 3+ years</p>
+                    </div>
+                    <p class="text-gray-700 mb-6">Lead fitness center operations, manage staff, and create an exceptional wellness experience for our members.</p>
+                    <button class="apply-btn w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105" 
+                            data-job="Fitness Center Manager" data-company="Muaki Fitness">
+                        Apply Now
+                    </button>
+                </div>
+
+                <!-- Investment Jobs -->
+                <div class="career-card bg-white rounded-2xl p-8 shadow-lg border-l-4 border-yellow-500 fade-in" data-category="investments">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"/>
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-muaki-navy">Muaki Investments</h4>
+                            <p class="text-gray-600">Financial Services</p>
+                        </div>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-800 mb-3">Financial Advisor</h5>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><span class="font-semibold">Location:</span> Limpopo & Gauteng</p>
+                        <p><span class="font-semibold">Type:</span> Full-time</p>
+                        <p><span class="font-semibold">Experience:</span> 3+ years</p>
+                    </div>
+                    <p class="text-gray-700 mb-6">Provide expert financial guidance, develop investment strategies, and help clients achieve their financial goals.</p>
+                    <button class="apply-btn w-full bg-yellow-500 hover:bg-yellow-600 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105" 
+                            data-job="Financial Advisor" data-company="Muaki Investments">
+                        Apply Now
+                    </button>
+                </div>
+
+                <div class="career-card bg-white rounded-2xl p-8 shadow-lg border-l-4 border-yellow-500 fade-in" data-category="investments">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-3 3a1 1 0 100 2h.01a1 1 0 100-2H10zm-4 1a1 1 0 011-1h.01a1 1 0 110 2H7a1 1 0 01-1-1zm1-4a1 1 0 100 2h.01a1 1 0 100-2H7zm2 0a1 1 0 100 2h.01a1 1 0 100-2H9zm2 0a1 1 0 100 2h.01a1 1 0 100-2H11z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-muaki-navy">Muaki Investments</h4>
+                            <p class="text-gray-600">Financial Services</p>
+                        </div>
+                    </div>
+                    <h5 class="text-lg font-semibold text-gray-800 mb-3">Investment Analyst</h5>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><span class="font-semibold">Location:</span> Gauteng</p>
+                        <p><span class="font-semibold">Type:</span> Full-time</p>
+                        <p><span class="font-semibold">Experience:</span> 2+ years</p>
+                    </div>
+                    <p class="text-gray-700 mb-6">Analyze market trends, evaluate investment opportunities, and support portfolio management decisions.</p>
+                    <button class="apply-btn w-full bg-yellow-500 hover:bg-yellow-600 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105" 
+                            data-job="Investment Analyst" data-company="Muaki Investments">
+                        Apply Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-muaki-navy mb-6">Application Process</h2>
+                <p class="text-xl text-gray-600">Your journey to joining our team in 4 simple steps</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center fade-in">
+                        <div class="w-20 h-20 bg-muaki-orange rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold text-white">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-muaki-navy mb-4">Apply Online</h3>
+                        <p class="text-gray-600">Submit your application through our online portal with your CV and cover letter.</p>
+                    </div>
+                    
+                    <div class="text-center fade-in">
+                        <div class="w-20 h-20 bg-muaki-navy rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold text-white">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-muaki-navy mb-4">Initial Review</h3>
+                        <p class="text-gray-600">Our HR team reviews your application and contacts qualified candidates within 5 business days.</p>
+                    </div>
+                    
+                    <div class="text-center fade-in">
+                        <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold text-white">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-muaki-navy mb-4">Interview Process</h3>
+                        <p class="text-gray-600">Participate in our comprehensive interview process including technical and cultural fit assessments.</p>
+                    </div>
+                    
+                    <div class="text-center fade-in">
+                        <div class="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold text-white">4</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-muaki-navy mb-4">Welcome Aboard</h3>
+                        <p class="text-gray-600">Join our team with a comprehensive onboarding program and start your career journey with us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Testimonials -->
+    <section class="py-20 bg-muaki-light-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-muaki-navy mb-6">What Our Team Says</h2>
+                <p class="text-xl text-gray-600">Hear from our employees about their experience working with us</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg fade-in">
+    <div class="flex items-center mb-6">
+        <!-- Profile Image or Icon -->
+        <div class="w-16 h-16 bg-gradient-to-br from-muaki-navy to-blue-600 rounded-full overflow-hidden flex items-center justify-center mr-4">
+            <img src="images/new.png" alt="Hector Baloyi" class="w-full h-full object-cover">
+        </div>
+        <div>
+            <h4 class="font-bold text-muaki-navy">Hector Baloyi</h4>
+            <p class="text-gray-600 text-sm">Head of IT</p>
+        </div>
+    </div>
+    <p class="text-gray-700 italic mb-4">
+        "Leading IT at Muaki has been both challenging and rewarding. From securing networks to developing modern digital platforms, I’m proud to drive innovation that empowers our businesses and communities."
+    </p>
+    <!-- Rating Stars -->
+    <div class="flex text-yellow-400">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+    </div>
+</div>
+
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg fade-in">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-muaki-orange to-orange-600 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-muaki-navy">James Maluleke</h4>
+                            <p class="text-gray-600 text-sm">Automotive Technician</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"The training opportunities and supportive team environment have helped me advance my skills. I'm proud to be part of this growing company."</p>
+                    <div class="flex text-yellow-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg fade-in">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-muaki-navy">Nomsa Chauke</h4>
+                            <p class="text-gray-600 text-sm">Property Sales Consultant</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"The diversity of our business portfolio means every day brings new learning opportunities. The company truly invests in our professional development."</p>
+                    <div class="flex text-yellow-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-muaki-navy text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Join Us?</h2>
+                <p class="text-xl text-blue-200">Have questions about our opportunities? Get in touch with our HR team.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="slide-in-left">
+                    <h3 class="text-2xl font-bold mb-6 text-muaki-orange">HR Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-muaki-orange mr-4 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"/>
+                            </svg>
+                            <div>
+                                <p class="font-semibold text-white mb-1">Head Office:</p>
+                                <p class="text-blue-200 text-sm">Stand number ERF 85, R81, Mphambo Village, Malamulele, 0982</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-muaki-orange mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <span>010 035 0177</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-muaki-orange mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <span>careers@muakigroup.co.za</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-muaki-orange mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                            </svg>
+                            <span>HR Department - Available Mon-Fri, 8AM-5PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-in-right">
+                    <form class="space-y-6">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white placeholder-blue-200 focus:outline-none focus:border-muaki-orange">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white placeholder-blue-200 focus:outline-none focus:border-muaki-orange">
+                        </div>
+                        <div>
+                            <select class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white focus:outline-none focus:border-muaki-orange">
+                                <option value="" class="text-gray-800">Select Position of Interest</option>
+                                <option value="properties" class="text-gray-800">Properties Division</option>
+                                <option value="construction" class="text-gray-800">Construction Division</option>
+                                <option value="automotive" class="text-gray-800">Automotive Division</option>
+                                <option value="healthcare" class="text-gray-800">Healthcare Division</option>
+                                <option value="fitness" class="text-gray-800">Fitness Division</option>
+                                <option value="investments" class="text-gray-800">Investments Division</option>
+                                <option value="general" class="text-gray-800">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea rows="4" placeholder="Your Message" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 text-white placeholder-blue-200 focus:outline-none focus:border-muaki-orange resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-muaki-orange hover:bg-orange-600 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Modal -->
+    <div id="application-modal" class="fixed inset-0 z-50 hidden application-modal">
+        <div class="flex items-center justify-center min-h-screen px-4">
+            <div class="modal-content bg-white rounded-2xl p-8 max-w-2xl w-full shadow-2xl">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-muaki-navy">Apply for Position</h3>
+                    <button id="close-modal" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="mb-6">
+                    <h4 id="modal-job-title" class="text-xl font-semibold text-gray-800 mb-2"></h4>
+                    <p id="modal-company" class="text-muaki-orange font-medium"></p>
+                </div>
+                
+                <form id="application-form" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-muaki-orange">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-muaki-orange">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                        <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-muaki-orange">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                        <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-muaki-orange">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Years of Experience</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-muaki-orange">
+                            <option value="">Select experience level</option>
+                            <option value="0-1">0-1 years</option>
+                            <option value="2-3">2-3 years</option>
+                            <option value="4-5">4-5 years</option>
+                            <option value="6-10">6-10 years</option>
+                            <option value="10+">10+ years</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Cover Letter</label>
+                        <textarea rows="4" placeholder="Tell us why you're interested in this position and what makes you a great fit..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-muaki-orange resize-none"></textarea>
+                    </div>
+                    
+                    <div class="bg-muaki-light-gray p-4 rounded-lg">
+                        <p class="text-sm text-gray-600 mb-2">📎 <strong>CV/Resume Required:</strong></p>
+                        <p class="text-sm text-gray-600">Please email your CV to <strong>careers@muakigroup.co.za</strong> with the subject line: "Application for [Position Name] - [Your Name]"</p>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <button type="button" id="cancel-application" class="flex-1 px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                            Cancel
+                        </button>
+                        <button type="submit" class="flex-1 px-6 py-3 bg-muaki-orange hover:bg-orange-600 text-white rounded-lg font-semibold transition-all transform hover:scale-105">
+                            Submit Application
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="text-3xl font-bold mb-4">
+                        <span class="text-muaki-orange">MUAKI</span> Business Park
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">Join our dynamic team and build your career with South Africa's most innovative business ecosystem. We're always looking for talented individuals to grow with us.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=." target="_blank" rel="noopener noreferrer" class="bg-muaki-navy hover:bg-muaki-orange p-3 rounded-full transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/muakigroup.construction/" target="_blank" rel="noopener noreferrer" class="bg-muaki-navy hover:bg-muaki-orange p-3 rounded-full transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323C6.001 8.198 7.152 7.708 8.449 7.708s2.448.49 3.323 1.416c.875.926 1.365 2.077 1.365 3.374s-.49 2.448-1.365 3.323c-.875.875-2.026 1.167-3.323 1.167zm7.718 0c-1.297 0-2.448-.49-3.323-1.297-.875-.926-1.365-2.077-1.365-3.374s.49-2.448 1.365-3.323c.875-.926 2.026-1.416 3.323-1.416s2.448.49 3.323 1.416c.875.926 1.365 2.077 1.365 3.374s-.49 2.448-1.365 3.323c-.875.875-2.026 1.167-3.323 1.167z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/27780901750" target="_blank" rel="noopener noreferrer" class="bg-muaki-navy hover:bg-muaki-orange p-3 rounded-full transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-muaki-orange">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="index.html#companies" class="text-gray-400 hover:text-white transition-colors">Our Companies</a></li>
+                        <li><a href="careers.html" class="text-muaki-orange">Careers</a></li>
+                        <li><a href="#open-positions" class="text-gray-400 hover:text-white transition-colors">Open Positions</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Career Resources -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-muaki-orange">Career Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#why-join-us" class="text-gray-400 hover:text-white transition-colors">Why Join Us</a></li>
+                        <li><a href="#open-positions" class="text-gray-400 hover:text-white transition-colors">Job Opportunities</a></li>
+                        <li><a href="mailto:careers@muakigroup.co.za" class="text-gray-400 hover:text-white transition-colors">Submit CV</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Employee Benefits</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Training Programs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Internships</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-500 text-sm mb-4 md:mb-0">
+                    <p>&copy; 2024 Muaki Business Park. All rights reserved. | Equal Opportunity Employer</p>
+                </div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-muaki-orange transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-muaki-orange transition-colors">Terms of Service</a>
+                    <a href="mailto:careers@muakigroup.co.za" class="text-gray-400 hover:text-muaki-orange transition-colors">careers@muakigroup.co.za</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('navbar-scroll');
+            } else {
+                navbar.classList.remove('navbar-scroll');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile sidebar functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileSidebar = document.getElementById('mobile-sidebar');
+        const closeSidebar = document.getElementById('close-sidebar');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
+        const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+        function openSidebar() {
+            mobileSidebar.classList.remove('translate-x-full');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSidebarMenu() {
+            mobileSidebar.classList.add('translate-x-full');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuBtn.addEventListener('click', openSidebar);
+        closeSidebar.addEventListener('click', closeSidebarMenu);
+        sidebarOverlay.addEventListener('click', closeSidebarMenu);
+
+        // Close sidebar when clicking on links
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', closeSidebarMenu);
+        });
+
+        // Job filtering functionality
+        const filterButtons = document.querySelectorAll('.job-filter-btn');
+        const jobCards = document.querySelectorAll('.career-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                jobCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 100);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.9)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Application modal functionality
+        const modal = document.getElementById('application-modal');
+        const closeModal = document.getElementById('close-modal');
+        const cancelApplication = document.getElementById('cancel-application');
+        const applicationForm = document.getElementById('application-form');
+        const applyButtons = document.querySelectorAll('.apply-btn');
+
+        applyButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const jobTitle = button.getAttribute('data-job');
+                const company = button.getAttribute('data-company');
+                
+                document.getElementById('modal-job-title').textContent = jobTitle;
+                document.getElementById('modal-company').textContent = company;
+                
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function closeApplicationModal() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+            applicationForm.reset();
+        }
+
+        closeModal.addEventListener('click', closeApplicationModal);
+        cancelApplication.addEventListener('click', closeApplicationModal);
+
+        // Close modal when clicking outside
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeApplicationModal();
+            }
+        });
+
+        // Form submissions
+        document.querySelector('section form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! Our HR team will get back to you within 24 hours.');
+            this.reset();
+        });
+
+        applicationForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const jobTitle = document.getElementById('modal-job-title').textContent;
+            const firstName = this.querySelector('input[type="text"]').value;
+            
+            alert(`Thank you ${firstName}! Your application for ${jobTitle} has been submitted. Please remember to email your CV to careers@muakigroup.co.za with the subject line: "Application for ${jobTitle} - ${firstName}"`);
+            closeApplicationModal();
+        });
+
+        // Add some interactive hover effects
+        document.querySelectorAll('.benefit-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'983221ee44fd9e94',t:'MTc1ODU0NzU3MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
